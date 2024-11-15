@@ -21,7 +21,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
     title: "Športuj Too",
-    description: "Rezervuj si športovisko rýchlo a jednoducho!"
+    description: "Rezervuj si športovisko rýchlo a jednoducho!",
+	manifest: "/site.webmanifest"
 }
 
 const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
