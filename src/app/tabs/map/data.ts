@@ -4,7 +4,7 @@ export default [
         image: "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg",
         latitude: 48.122883417729724,
         longitude: 17.12550623944996,
-        address: ""
+        address: "Pankúchova 4"
     },
     {
         name: "Gessayova",
@@ -18,27 +18,27 @@ export default [
         image: "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg",
         latitude: 48.121983567695764,
         longitude: 17.1265329373014,
-        address: ""
+        address: "Haanova 1"
     },
     {
         name: "Lachová",
         image: "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg",
         latitude: 48.12250282543049,
         longitude: 17.119339629397047,
-        address: ""
+        address: "Lachová 1"
     },
     {
         name: "Nobelovo Námestie",
         image: "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg",
         latitude: 48.1280543300591,
         longitude: 17.101537383741498,
-        address: ""
+        address: "Nobelovo Námestie 6"
     },
     {
         name: "ZŠ Holíčska",
         image: "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg",
         latitude: 48.108965620780836,
         longitude: 17.10196544396403,
-        address: ""
+        address: "Holíčska 50"
     }
 ]

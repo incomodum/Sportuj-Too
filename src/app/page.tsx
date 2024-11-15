@@ -1,7 +1,12 @@
+import { Viewport } from "next"
 import Link from "next/link"
 
 import Incomodum from "./incomodum"
 import Logo from "./logo"
+
+export const viewport: Viewport = {
+    themeColor: "#39B24B"
+}
 
 export default function LandingPage() {
     return (

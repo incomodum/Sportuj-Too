@@ -1,8 +1,7 @@
 import type { ReactNode } from "react"
 
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import localFont from "next/font/local"
-import Link from "next/link"
 
 import { ThemeProvider } from "next-themes"
 
@@ -19,10 +18,14 @@ const geistMono = localFont({
     weight: "100 900"
 })
 
+export const viewport: Viewport = {
+    viewportFit: "cover"
+}
+
 export const metadata: Metadata = {
     title: "Športuj Too",
     description: "Rezervuj si športovisko rýchlo a jednoducho!",
-	manifest: "/site.webmanifest"
+    manifest: "/site.webmanifest"
 }
 
 const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {

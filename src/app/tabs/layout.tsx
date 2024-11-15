@@ -1,8 +1,12 @@
-"use client"
-
 import { ReactNode } from "react"
 
+import { Viewport } from "next"
+
 import Navbar from "./navbar"
+
+export const viewport: Viewport = {
+    themeColor: "#ffffff"
+}
 
 export default function TabsLayout({ children }: Readonly<{ children: ReactNode }>) {
     return (

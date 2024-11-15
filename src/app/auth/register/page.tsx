@@ -1,8 +1,13 @@
+import { Viewport } from "next"
 import Link from "next/link"
 
 import { Input } from "@/components/ui/input"
 
 import Logo from "../../logo"
+
+export const viewport: Viewport = {
+    themeColor: "#EDEDED"
+}
 
 export default function RegisterPage() {
     return (
