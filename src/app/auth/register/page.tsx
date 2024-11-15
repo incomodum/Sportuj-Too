@@ -6,8 +6,8 @@ import Logo from "../../logo"
 
 export default function RegisterPage() {
     return (
-        <div className='isolate flex flex-grow flex-col items-center bg-[#EDEDED] py-8 md:justify-center'>
-            <Link href='/' className='max-w-[400px] w-[90%]'>
+        <div className='isolate flex flex-grow flex-col items-center bg-[#EDEDED] py-4 md:justify-center'>
+            <Link href='/' className='w-[90%] max-w-[400px]'>
                 <Logo className='mb-4 w-full text-custom-green' />
             </Link>
             <div className='flex w-[90%] flex-col gap-4 md:max-w-[400px]'>
@@ -42,7 +42,7 @@ export default function RegisterPage() {
                     className='rounded-[33px] px-6 py-7 text-lg placeholder:text-black/30'
                 />
             </div>
-            <div className='flex-grow md:max-h-8' />
+            <div className='min-h-4 flex-grow md:max-h-8' />
             <div className='flex w-[90%] flex-col gap-4 md:max-w-[400px]'>
                 <Link href='/tabs/map' className='w-full'>
                     <button className='w-full rounded-[40px] bg-custom-green px-6 py-3 text-lg font-bold text-white hover:bg-custom-green/70'>

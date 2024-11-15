@@ -6,8 +6,8 @@ import Logo from "../../logo"
 
 export default function LoginPage() {
     return (
-        <div className='isolate flex flex-col flex-grow items-center bg-[#EDEDED] py-8 md:justify-center'>
-            <Link href='/' className='max-w-[400px] w-[90%]'>
+        <div className='isolate flex flex-grow flex-col items-center bg-[#EDEDED] py-8 md:justify-center'>
+            <Link href='/' className='w-[90%] max-w-[400px]'>
                 <Logo className='mb-4 w-full text-custom-green' />
             </Link>
             <div className='flex w-[90%] flex-col gap-4 md:max-w-[400px]'>

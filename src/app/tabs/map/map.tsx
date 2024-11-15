@@ -37,7 +37,7 @@ export default function Map() {
     )
 
     return (
-        <div className='relative flex-grow w-full min-h-full'>
+        <div className='relative min-h-full w-full flex-grow'>
             <MapContainer
                 initialViewState={{
                     latitude: 48.11702320286221,
@@ -101,7 +101,7 @@ export default function Map() {
                             placeholder='Vyhľadaj'
                             value={search}
                             onInput={(event) => setSearch?.((event.target as HTMLInputElement).value)}
-                            className='flex flex-grow rounded-[30px] bg-white border p-3 pl-11 text-lg font-medium transition placeholder:text-[#808080] focus:outline-none'
+                            className='flex flex-grow rounded-[30px] border bg-white p-3 pl-11 text-lg font-medium transition placeholder:text-[#808080] focus:outline-none'
                         />
                         {search.length > 0 && (
                             <button
