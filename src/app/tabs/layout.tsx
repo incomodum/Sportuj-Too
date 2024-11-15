@@ -6,8 +6,8 @@ import Navbar from "./navbar"
 
 export default function TabsLayout({ children }: Readonly<{ children: ReactNode }>) {
     return (
-        <div className='flex size-full flex-col bg-[#EDEDED] md:flex-col-reverse'>
-            <div className='h-[calc(100vh-75px)] w-full'>{children}</div>
+        <div className='flex w-full min-h-full flex-grow flex-col bg-[#EDEDED] md:flex-col-reverse'>
+            <div className='h-auto flex-grow w-full flex'>{children}</div>
             <Navbar />
         </div>
     )

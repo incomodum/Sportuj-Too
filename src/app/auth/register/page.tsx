@@ -6,8 +6,8 @@ import Logo from "../../logo"
 
 export default function RegisterPage() {
     return (
-        <div className='isolate flex h-screen flex-col items-center bg-[#EDEDED] py-8 md:justify-center'>
-            <Link href='/' className='max-w-[400px]'>
+        <div className='isolate flex flex-grow flex-col items-center bg-[#EDEDED] py-8 md:justify-center'>
+            <Link href='/' className='max-w-[400px] w-[90%]'>
                 <Logo className='mb-4 w-full text-custom-green' />
             </Link>
             <div className='flex w-[90%] flex-col gap-4 md:max-w-[400px]'>
@@ -52,7 +52,7 @@ export default function RegisterPage() {
                 <button className='w-full rounded-[40px] bg-white px-6 py-3 text-lg font-bold text-[#252525] hover:bg-white/70'>
                     Registrovať sa cez Google
                 </button>
-                <p className='w-full text-center font-medium'>
+                <p className='w-full text-center font-medium text-black'>
                     Už máš vytvorený účet?{" "}
                     <Link href='/auth/login' className='font-medium text-custom-green hover:underline'>
                         Prihlás sa tu!

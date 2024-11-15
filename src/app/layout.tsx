@@ -26,9 +26,9 @@ export const metadata: Metadata = {
 
 const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
     return (
-        <html suppressHydrationWarning lang='en'>
+        <html suppressHydrationWarning lang='en' style={{ height: "100%" }}>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} h-full bg-background text-foreground antialiased`}>
+                className={`${geistSans.variable} ${geistMono.variable} min-h-full flex flex-col bg-background text-foreground antialiased`}>
                 <ThemeProvider attribute='class'>{children}</ThemeProvider>
             </body>
         </html>
