@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .safe-bottom {
-    padding-bottom: env(safe-area-inset-bottom);
+    margin-bottom: env(safe-area-inset-bottom);
+}
+
+button {
+    @apply focus:outline-none;
 }
