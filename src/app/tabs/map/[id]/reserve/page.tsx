@@ -21,15 +21,6 @@ export default async function PlacePage({ params }: { params: Promise<{ id: stri
                     <p className="hidden font-medium md:block">Späť</p>
                 </button>
             </Link>
-            {/* <div className='fixed left-0 top-8 flex w-full flex-row items-center justify-between px-8 md:top-24'>
-                <Link href={`/tabs/map/${id}`}>
-                    <button className='flex size-[55px] items-center justify-center rounded-full bg-white'>
-                        <ArrowLeft />
-                    </button>
-                </Link>
-                <p className='text-xl font-medium'>{place.name}</p>
-				<div className="size-[55px]" />
-            </div> */}
         </div>
     )
 }

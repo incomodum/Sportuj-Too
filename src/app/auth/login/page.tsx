@@ -36,9 +36,16 @@ export default function LoginPage() {
                         Prihlásiť sa
                     </button>
                 </Link>
-                <button className="w-full rounded-[40px] bg-white px-6 py-3 text-lg font-bold text-[#252525] hover:bg-white/70">
-                    Prihlásiť sa cez Google
-                </button>
+                <Link href="/tabs/map" className="w-full">
+                    <button className="w-full rounded-[40px] bg-white px-6 py-3 text-lg font-bold text-[#252525] hover:bg-white/70">
+                        Prihlásiť sa cez Google
+                    </button>
+                </Link>
+                <Link href="/tabs/map" className="w-full">
+                    <button className="w-full rounded-[40px] bg-black px-6 py-3 text-lg font-bold text-white hover:bg-black/70">
+                        Prihlásiť sa cez Apple
+                    </button>
+                </Link>
                 <p className="w-full text-center font-medium text-black">
                     Nemáš účet?{" "}
                     <Link href="/auth/register" className="font-medium text-custom-green hover:underline">

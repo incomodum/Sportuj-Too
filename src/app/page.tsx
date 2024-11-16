@@ -22,7 +22,7 @@ export default function LandingPage() {
                 <p className="text-center text-2xl font-medium opacity-50 md:text-3xl">
                     Rezervuj si športovisko rýchlo a jednoducho!
                 </p>
-                <Link href="/auth/register">
+                <Link href="/auth/login">
                     <button className="mt-8 rounded-[40px] bg-white px-6 py-4 text-xl font-bold text-custom-green transition-all hover:scale-105">
                         Pokračovať do aplikácie
                     </button>
@@ -33,10 +33,10 @@ export default function LandingPage() {
                 <div>TODO</div>
             </section>
             <footer className="flex min-h-[100px] w-full flex-row items-center bg-custom-green p-4 px-8 text-white">
-                <Logo className="w-[150px]" />
+                <Logo className="w-[120px]" />
                 &nbsp; by &nbsp;
                 <Link href="https://incomodum.com" target="_blank">
-                    <Incomodum className="w-[150px] text-white" />
+                    <Incomodum className="w-[120px] text-white" />
                 </Link>
             </footer>
         </>

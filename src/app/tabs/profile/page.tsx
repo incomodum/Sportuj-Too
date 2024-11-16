@@ -5,7 +5,7 @@ import Link from "next/link"
 import { DialogClose } from "@radix-ui/react-dialog"
 
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "./dialog"
-import { LogOut, NfcIcon } from "lucide-react"
+import { LogOut, ShareIcon, Trash2Icon } from "lucide-react"
 import qrcode from "qrcode"
 import QRCode from "react-qr-code"
 
@@ -21,7 +21,6 @@ export default function ProfilePage() {
                 canvas.toBlob((data) => {
                     if (!data) return
                     navigator.clipboard.write([new ClipboardItem({ "image/png": data })])
-                    alert("QR Kód bol skopírovaní")
                 })
             })
         } else {
@@ -70,27 +69,26 @@ export default function ProfilePage() {
                     </DialogTrigger>
                     <DialogContent className="flex w-full flex-col border-none bg-transparent shadow-none">
                         <DialogTitle hidden>QR Code</DialogTitle>
-                        <div className="flex flex-row justify-between">
-                            <div className="w-fit rounded-[15px] bg-white p-4">
-                                <NfcIcon className="text-black" />
-                            </div>
-                            <DialogClose asChild>
-                                <button className="rounded-[15px] bg-red-500 p-4 px-6 font-medium text-white hover:bg-red-400">
-                                    Stornovať
-                                </button>
-                            </DialogClose>
+                        <div className="flex aspect-[4/1] w-full flex-row justify-center overflow-clip rounded-[15px] bg-white md:hidden">
+                            <video autoPlay muted loop src="/nfc.mp4" className="" controls={false} />
                         </div>
                         <div className="mt-3 aspect-square h-auto w-full rounded-[15px] bg-white p-6">
                             <QRCode className="size-full" value={data} />
                         </div>
 
-                        <DialogClose asChild>
+                        <div className="flex flex-row gap-3">
                             <button
                                 onClick={share}
-                                className="mt-5 w-full rounded-[14px] bg-custom-green py-4 text-lg font-medium text-white hover:bg-custom-green/70 focus:outline-none">
-                                Zdielať
+                                className="flex-grow flex flex-row items-center gap-3 rounded-[15px] bg-custom-green p-4 text-lg font-medium text-white hover:bg-custom-green/70 focus:outline-none">
+                                <ShareIcon /> Zdielať
                             </button>
-                        </DialogClose>
+                            <DialogClose asChild>
+                                <button className="flex-grow flex flex-row items-center gap-3 rounded-[15px] bg-red-500 p-4 text-lg font-medium text-white hover:bg-red-400">
+                                    <Trash2Icon />
+									Stornovať
+                                </button>
+                            </DialogClose>
+                        </div>
                     </DialogContent>
                 </Dialog>
             </div>
